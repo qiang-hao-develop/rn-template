@@ -6,7 +6,8 @@ import {getRepoDetail} from '../reducers';
 const screen = Dimensions.get('window');
 
 class RepoDetail extends Component {
-  static navigationOptions = ({navigation}) => {};
+  static navigationOptions = ({navigation}) => {
+  };
 
   componentDidMount() {
     const {name} = this.props.navigation.state.params;
@@ -14,7 +15,6 @@ class RepoDetail extends Component {
   }
   render() {
     const {repoInfo, loadingInfo, user} = this.props;
-    console.log(repoInfo, user, 'user');
     if (loadingInfo) return <Text>Loading Repoinfo....</Text>;
     const {
       name,

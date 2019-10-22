@@ -10,6 +10,12 @@ const Tabs = createBottomTabNavigator(
     Profile: {
       screen: Profile,
     },
+    RepoList2: {
+      screen: RepoList,
+    },
+    Profile2: {
+      screen: Profile,
+    },
   },
   {
     headerMode: 'none',
